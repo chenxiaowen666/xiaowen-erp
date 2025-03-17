@@ -1,0 +1,3 @@
+# Project exclude paths
+/xiaowen-erp-common/target/
+/xiaowen-erp-system/xiaowen-erp-system-biz/target/

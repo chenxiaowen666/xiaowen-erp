@@ -1,0 +1,8 @@
+server:
+    port: 60001
+spring:
+  application:
+    name: system-server
+
+  profiles:
+    active: local
