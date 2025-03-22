@@ -1,7 +1,7 @@
 package com.xiaowen.system.domain.user;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.module.system.enums.common.SexEnum;
+import com.xiaowen.common.enums.CommonStatusEnum;
+import com.xiaowen.common.enums.SexEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;

@@ -1,0 +1,19 @@
+### 请求 /system/user/create接口 => 没有权限
+POST http://127.0.0.1:60001/system/user/create
+Authorization: Bearer test1
+Content-Type: application/json
+
+{
+
+	"username" : "lijiaxin2",
+	"nickname" : "xinba",
+	"remark":"beizhu hhhhh 用户备注",
+	"depyId": 1,
+	"postIds" :[1,2,3,4],
+	"email": "02@qq.com",
+	"mobile": "13701112201",
+	"sex": 0,
+	"avatar": "xinjiang",
+	"password": "123456"
+
+}

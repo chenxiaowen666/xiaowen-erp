@@ -24,10 +24,10 @@
     </properties>
 
     <dependencies>
+        <!-- 系统模块公共依赖 -->
         <dependency>
             <groupId>com.xiaowen</groupId>
             <artifactId>xiaowen-erp-common</artifactId>
-            <version>${revision}</version>
         </dependency>
 
     </dependencies>

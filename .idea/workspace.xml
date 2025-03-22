@@ -5,10 +5,134 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="636acaee-22c9-474f-a9ab-4dfaeeeac1a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/xiaowen-erp-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xiaowen-erp-common/src/main/java/com/xiaowen/common/pojo/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xiaowen-erp-dependencise/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/docker/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/idea/http-client.env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-auth/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-infra/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-infra/xiaowen-infra-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-infra/xiaowen-infra-api/src/main/java/com/xiaowen/infra/api/logger/ApiAccessLogApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-infra/xiaowen-infra-api/src/main/java/com/xiaowen/infra/api/logger/ApiErrorLogApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-infra/xiaowen-infra-api/src/main/java/com/xiaowen/infra/api/logger/dto/ApiAccessLogCreateReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-infra/xiaowen-infra-api/src/main/java/com/xiaowen/infra/api/logger/dto/ApiErrorLogCreateReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-infra/xiaowen-infra-biz/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/api/oauth2/OAuth2TokenApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/api/oauth2/dto/OAuth2AccessTokenCheckRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/api/oauth2/dto/OAuth2AccessTokenCreateReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/api/oauth2/dto/OAuth2AccessTokenRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/api/permission/PermissionApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/api/permission/RoleApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/api/permission/dto/DeptDataPermissionRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/api/user/AdminUserApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/api/user/dto/AdminUserRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/enums/ApiConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/enums/DictTypeConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/enums/ErrorCodeConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/system/enums/LogRecordConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/auth/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/auth/vo/AuthLoginReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/auth/vo/AuthLoginRespVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/auth/vo/AuthRegisterReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/auth/vo/AuthResetPasswordReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/auth/vo/AuthSmsLoginReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/auth/vo/AuthSmsSendReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/auth/vo/AuthSocialLoginReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/auth/vo/CaptchaVerificationReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/user/UpdateUser.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/user/UserController.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/user/http-client.env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/handler/DefaultDBFieldHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/mapper/user/AdminUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/service/auth/AdminAuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/service/user/AdminUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/service/user/AdminUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/test/java/com/xiaowen/system/controller/admin/user/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/annotation/DataPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/aop/DataPermissionAnnotationAdvisor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/aop/DataPermissionAnnotationInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/aop/DataPermissionContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/core/ArrayValuable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/core/KeyValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums/CommonStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums/RpcConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums/SexEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums/TerminalEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums/UserTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums/sms/SmsReceiveStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums/sms/SmsSceneEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums/sms/SmsSendStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums/sms/SmsTemplateTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums/social/SocialTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/pojo/PageParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/pojo/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/pojo/SortablePageParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/pojo/SortingField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/rule/DataPermissionRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/rule/DataPermissionRuleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/rule/DataPermissionRuleFactoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/util/DataPermissionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/util/cache/CacheUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/util/collection/ArrayUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/util/collection/CollectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/util/collection/MapUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/util/collection/SetUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/util/json/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/util/monitor/TracerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/util/object/BeanUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/util/servlet/ServletUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/util/validation/ValidationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/validation/InEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/validation/InEnumCollectionValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/validation/InEnumValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/validation/Mobile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/validation/MobileValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/config/AuthorizeRequestsCustomizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/config/SecurityProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/config/XiaowenSecurityAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/config/XiaowenSecurityRpcAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/config/XiaowenWebSecurityConfigurerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/core/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/core/context/TransmittableThreadLocalSecurityContextHolderStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/core/filter/TokenAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/core/handler/AccessDeniedHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/core/handler/AuthenticationEntryPointImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/core/rpc/LoginUserRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/core/service/SecurityFrameworkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/core/service/SecurityFrameworkServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java/com/xiaowen/framework/security/core/util/SecurityFrameworkUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-web/src/main/java/com/xiaowen/web/config/WebProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-web/src/main/java/com/xiaowen/web/config/XiaowenWebAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-web/src/main/java/com/xiaowen/web/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-web/src/main/java/com/xiaowen/web/util/WebFrameworkUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-web/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums/GlobalErrorCodeConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/exception/enums/GlobalErrorCodeConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums/ServiceErrorCodeRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/exception/enums/ServiceErrorCodeRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-common/src/main/java/com/xiaowen/common/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/exception/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-common/src/main/java/com/xiaowen/common/exception/ServerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/exception/ServerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-common/src/main/java/com/xiaowen/common/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/exception/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-common/src/main/java/com/xiaowen/common/exception/util/ServiceExceptionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/exception/util/ServiceExceptionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-common/src/main/java/com/xiaowen/common/pojo/BaseDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/pojo/BaseDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-common/src/main/java/com/xiaowen/common/pojo/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/pojo/CommonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-erp-system/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java/com/xiaowen/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/SystemServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/SystemServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/user/vo/UserSaveReqVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/user/vo/UserSaveReqVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/domain/user/AdminUserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/domain/user/AdminUserDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/resources/bootstrap-local.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +142,31 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="HTTP Public Environment File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "chenxiaowen666"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/chenxiaowen666/xiaowen-erp.git",
+    "accountId": "69563b45-b8a5-490e-863e-f89a8bec1feb"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -34,11 +176,14 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2uPf9gCJcXrilh63dxLWdDhEWn9" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -46,15 +191,27 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.UpdateUser | 请求 /system/user/update 接口 => 没有权限.executor": "Run",
+    "HTTP Request.UserController | 请求 /system/user/create接口 => 没有权限.executor": "Run",
+    "JUnit.UserControllerTest.test.executor": "Run",
+    "Maven.xiaowen-erp [clean].executor": "Run",
+    "Maven.xiaowen-erp [install].executor": "Run",
+    "Maven.xiaowen-erp-common [clean].executor": "Run",
     "Maven.xiaowen-erp-common [install].executor": "Run",
     "Maven.xiaowen-erp-dependencies [clean].executor": "Run",
     "Maven.xiaowen-erp-dependencies [install].executor": "Run",
+    "Maven.xiaowen-spring-boot-starter-security [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.SystemServerApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/GithubProject/MyProject/xiaowen-erp/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/domain",
+    "last_opened_file_path": "E:/GithubProject/MyProject/xiaowen-erp/xiaowen-framework/xiaowen-erp-common/src/main/java/com/xiaowen/common/enums",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,14 +224,51 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\GithubProject\MyProject\xiaowen-erp\xiaowen-erp-system\xiaowen-erp-system-biz\src\main\java\com\xiaowen\system\domain" />
-      <recent name="E:\GithubProject\MyProject\xiaowen-erp\xiaowen-erp-common\src\main\java\com\xiaowen\common\exception" />
-      <recent name="E:\GithubProject\MyProject\xiaowen-erp\xiaowen-erp-common\src\main\java\com\xiaowen\common" />
+      <recent name="E:\GithubProject\MyProject\xiaowen-erp\xiaowen-framework\xiaowen-erp-common\src\main\java\com\xiaowen\common\enums" />
+      <recent name="E:\GithubProject\MyProject\xiaowen-erp\xiaowen-erp-system\xiaowen-erp-system-biz\src\main\java\com\xiaowen\system\controller\admin\auth\vo" />
+      <recent name="E:\GithubProject\MyProject\xiaowen-erp\xiaowen-framework\xiaowen-spring-boot-starter-web\src\main\resources" />
+      <recent name="E:\GithubProject\MyProject\xiaowen-erp\xiaowen-erp-common\src\main\java\com\xiaowen\common\util" />
+      <recent name="E:\GithubProject\MyProject\xiaowen-erp\xiaowen-erp-infra\xiaowen-infra-api\src\main\java\com\xiaowen\infra\api" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GithubProject\MyProject\xiaowen-erp\xiaowen-framework" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xiaowen.system.controller.admin.auth.vo" />
+      <recent name="com.xiaowen.web.config" />
+      <recent name="com.xiaowen.framework.security.config" />
+      <recent name="com.xiaowen.framework.security.core.handler" />
+      <recent name="com.xiaowen.framework.security.core.service" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="HTTP Request.UpdateUser | 请求 /system/user/update 接口 =&gt; 没有权限">
+    <configuration name="UpdateUser | 请求 /system/user/update 接口 =&gt; 没有权限" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/user/UpdateUser.http" executionIdentifier="请求 /system/user/update 接口 =&gt; 没有权限" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="UserController | 请求 /system/user/create接口 =&gt; 没有权限" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java/com/xiaowen/system/controller/admin/user/UserController.http" executionIdentifier="请求 /system/user/create接口 =&gt; 没有权限" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="UserControllerTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xiaowen-erp-system-biz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaowen.system.controller.admin.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiaowen.system.controller.admin.user" />
+      <option name="MAIN_CLASS_NAME" value="com.xiaowen.system.controller.admin.user.UserControllerTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SystemServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="xiaowen-erp-system-biz" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiaowen.SystemServerApplication" />
@@ -90,7 +284,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.UpdateUser | 请求 /system/user/update 接口 =&gt; 没有权限" />
+        <item itemvalue="HTTP Request.UserController | 请求 /system/user/create接口 =&gt; 没有权限" />
         <item itemvalue="Spring Boot.SystemServerApplication" />
+        <item itemvalue="JUnit.UserControllerTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -112,11 +309,41 @@
       <updated>1742154983237</updated>
       <workItem from="1742154984608" duration="3468000" />
       <workItem from="1742158522240" duration="7184000" />
-      <workItem from="1742165966144" duration="3615000" />
+      <workItem from="1742165966144" duration="78318000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((IllegalArgumentException)ex).backtrace" custom="java.lang.IllegalArgumentException" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

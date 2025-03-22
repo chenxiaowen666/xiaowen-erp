@@ -3,6 +3,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.4</version>
+    </parent>
 
     <groupId>com.xiaowen</groupId>
     <artifactId>xiaowen-erp</artifactId>
@@ -10,9 +15,11 @@
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <modules>
-
-        <module>xiaowen-erp-common</module>
+        <module>xiaowen-framework</module>
         <module>xiaowen-erp-system</module>
+        <module>xiaowen-erp-auth</module>
+        <module>xiaowen-erp-infra</module>
+        <module>xiaowen-framework/xiaowen-spring-boot-starter-web</module>
     </modules>
 
     <properties>
@@ -29,23 +36,39 @@
         <spring.cloud.alibaba.version>2023.0.1.0</spring.cloud.alibaba.version>
 <!--        spring 相关-->
         <springdoc-openapi.version>2.5.0</springdoc-openapi.version>
+        <springdoc.version>1.8.0</springdoc.version>
 <!--        数据库相关-->
         <druid.version>1.2.24</druid.version>
         <mybatis.version>3.5.17</mybatis.version>
-        <mybatis-plus.version>3.5.9</mybatis-plus.version>
+        <mybatis-plus.version>3.5.5</mybatis-plus.version>
+        <mysql.version>8.0.28</mysql.version>
+        <jsqlparser.version>4.6</jsqlparser.version>
 
         <!-- 工具类-->
+        <transmittable-thread-local.version>2.14.5</transmittable-thread-local.version>
         <lombok.version>1.18.36</lombok.version>
         <hutool.version>5.8.35</hutool.version>
         <jackson-databind.version>2.15.3</jackson-databind.version>
+        <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
+        <jakarta.servlet.version>5.0.0</jakarta.servlet.version>
         <guava.version>33.4.0-jre</guava.version>
+<!--        监控相关-->
+        <skywalking.version>8.12.0</skywalking.version>
         <!-- VO数据翻译  fhs-->
         <easy-trans.version>3.0.6</easy-trans.version>
+        <!-- bizlog-sdk 版本 -->
+        <bizlog-sdk.version>3.0.6</bizlog-sdk.version>
     </properties>
 
     <dependencyManagement>
+
         <dependencies>
             <!-- 统一依赖管理 -->
+            <dependency>
+                <groupId>com.xiaowen</groupId>
+                <artifactId>xiaowen-erp-common</artifactId>
+                <version>${revision}</version>
+            </dependency>
             <!-- Spring Boot BOM -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -72,11 +95,52 @@
             </dependency>
 <!--            spring 相关-->
             <dependency>
+                <groupId>org.springdoc</groupId> <!-- 接口文档 UI：默认 -->
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
                 <version>${springdoc-openapi.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+<!--            rpc远程相关-->
+
+            <!-- 监控相关 -->
+            <dependency>
+                <groupId>org.apache.skywalking</groupId>
+                <artifactId>apm-toolkit-trace</artifactId>
+                <version>${skywalking.version}</version>
+            </dependency>
+            <!-- Web 相关 -->
+            <dependency>
+                <groupId>com.xiaowen</groupId>
+                <artifactId>xiaowen-spring-boot-starter-web</artifactId>
+                <version>${revision}</version>
+            </dependency>
+<!--            spring security 自定义 -->
+            <dependency>
+                <groupId>com.xiaowen</groupId>
+                <artifactId>xiaowen-spring-boot-starter-web</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
 <!--            数据库相关-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
@@ -99,7 +163,30 @@
                 <version>${mybatis-plus.version}</version>
                 <scope>compile</scope>
             </dependency>
+
+            <dependency>
+                <groupId>com.github.jsqlparser</groupId>
+                <artifactId>jsqlparser</artifactId>
+                <version>${jsqlparser.version}</version>
+            </dependency>
 <!--            工具类 -->
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>transmittable-thread-local</artifactId> <!--解决线程池中 ThreadLocal 变量无法跨线程传递的问题。-->
+                <version>${transmittable-thread-local.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
+                <version>${jakarta.servlet.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>${jakarta.validation-api.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
@@ -146,6 +233,20 @@
                 <groupId>com.fhs-opensource</groupId>
                 <artifactId>easy-trans-anno</artifactId>
                 <version>${easy-trans.version}</version>
+            </dependency>
+<!--            bizlog-sdk 版本 -->
+            <!-- Spring Boot 通用操作日志组件，基于注解实现 -->
+            <!-- 此组件解决的问题是：「谁」在「什么时间」对「什么」做了「什么事」 -->
+            <dependency>
+                <groupId>io.github.mouzt</groupId>
+                <artifactId>bizlog-sdk</artifactId>
+                <version>${bizlog-sdk.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
 

@@ -3,17 +3,26 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/xiaowen-erp-common/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/xiaowen-erp-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaowen-erp-auth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaowen-erp-dependencies/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaowen-erp-dependencies/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaowen-erp-dependencise/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaowen-erp-dependencise/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaowen-erp-infra/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaowen-erp-infra/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaowen-erp-infra/xiaowen-infra-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaowen-erp-infra/xiaowen-infra-biz/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaowen-erp-system/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaowen-erp-system/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaowen-erp-system/xiaowen-erp-system-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaowen-framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaowen-framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaowen-framework/xiaowen-erp-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaowen-framework/xiaowen-spring-boot-starter-web/src/main/java" charset="UTF-8" />
   </component>
 </project>

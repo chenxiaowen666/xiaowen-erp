@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.xiaowen</groupId>
         <artifactId>xiaowen-erp-system</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
     <packaging>jar</packaging>
 
@@ -23,7 +23,16 @@
         <dependency>
             <groupId>com.xiaowen</groupId>
             <artifactId>xiaowen-erp-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.xiaowen</groupId>
+            <artifactId>xiaowen-erp-system-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <!--        web-->
+        <dependency>
+            <groupId>com.xiaowen</groupId>
+            <artifactId>xiaowen-spring-boot-starter-web</artifactId>
         </dependency>
         <!-- Spring Security -->
         <dependency>
@@ -40,15 +49,30 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-<!--       数据库相关-->
+        <!-- mybatisPlus 核心库 -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+
+        <!--       数据库相关-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.mysql</groupId>-->
+        <!--            <artifactId>mysql-connector-j</artifactId>-->
+        <!--        </dependency>-->
         <!-- Web 相关 -->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <!-- 工具类相关 -->
         <dependency>
@@ -56,6 +80,23 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>io.github.mouzt</groupId>
+            <artifactId>bizlog-sdk</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+
     </dependencies>
 
 

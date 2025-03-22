@@ -1,0 +1,36 @@
+server:
+    port: 60001
+
+logging:
+  level:
+    root: info
+    org.springframework.security: DEBUG
+#  org: springframework=DEBUG
+#  com:
+#    baomidou: mybatisplus=DEBUG
+
+spring:
+#  security:
+#    enabled: false
+
+
+  application:
+    name: system-server
+  profiles:
+    active: local
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xiaowen_erp_system?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+#    hikari:
+#      maximum-pool-size: 10
+#      minimum-idle: 5
+#      connection-timeout: 30000
+#      idle-timeout: 600000
+#      max-lifetime: 1800000
+
+xiaowen:
+  web:
+    admin-ui:
+      url: "http://www.baidu.com"  # 这里要确保有值
